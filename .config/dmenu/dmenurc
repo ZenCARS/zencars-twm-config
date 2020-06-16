@@ -3,7 +3,7 @@
 # PURPLE
 
 ## define the font for dmenu to be used
-DMENU_FN="Monospace:bold:pixelsize=14"
+DMENU_FN="Mononoki:bold:pixelsize=11"
 
 ## background colour for unselected menu-items
 DMENU_NB="#191919"
@@ -12,12 +12,12 @@ DMENU_NB="#191919"
 DMENU_NF="#6a0080"
 
 ## background colour for selected menu-items
-DMENU_SB="#6a0080"
+DMENU_SB="#637260"
 
 ## textcolour for selected menu-items
 DMENU_SF="#191919"
 
 ## export our variables
-export DMENU_OPTIONS="-h 25 -fn $DMENU_FN -nb $DMENU_NB -nf $DMENU_NF -sf $DMENU_SF -sb $DMENU_SB"
+export DMENU_OPTIONS="-h 16 -fn $DMENU_FN -nb $DMENU_NB -nf $DMENU_NF -sf $DMENU_SF -sb $DMENU_SB"
 
 export DMENU="dmenu_run -i $DMENU_OPTIONS"
