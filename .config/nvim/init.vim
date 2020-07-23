@@ -12,6 +12,7 @@ if ! filereadable(expand('~/.config/nvim/autoload/plug.vim'))
 endif
 
 call plug#begin('~/.config/nvim/plugged')
+Plug 'arcticicestudio/nord-vim'
 Plug 'gmarik/Vundle.vim'                          " Vundle
 Plug 'itchyny/lightline.vim'                      " Lightline statusbar
 Plug 'vifm/vifm.vim'
@@ -30,6 +31,8 @@ Plug 'tpope/vim-surround'                         " Change surrounding marks
 Plug 'kovetskiy/sxhkd-vim'
 call plug#end()
 
+colorscheme nord
+
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Remap Keys
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -40,7 +43,7 @@ call plug#end()
 " => Powerline
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 let g:lightline = {
-      \ 'colorscheme': 'darcula',
+      \ 'colorscheme': 'nord',
       \ }
 
 " Always show statusline
